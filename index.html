@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO/OSI Model and Network Protocols</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ISO/OSI Model and Network Protocols</h1>
+        <p>A comprehensive guide to the OSI model layers and protocol assignments</p>
+    </header>
+
+    <main>
+        <!-- Section 1: OSI Model Description -->
+        <section class="osi-model-section">
+            <h2>ISO/OSI Model Description</h2>
+            <div class="content">
+                <p>The Open Systems Interconnection (OSI) model is a conceptual framework standardized by the International Organization for Standardization (ISO). It describes how different network protocols interact and work together to provide network services. The model divides network communication into seven abstraction layers, each serving specific functions and communicating with the layers directly above and below it.</p>
+                <p>This layered approach allows for modular network design, where protocols at each layer can be developed and updated independently without affecting the entire system. The OSI model serves as a reference for understanding network architecture, troubleshooting network issues, and designing new network protocols.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: OSI Layers with PDUs and Protocols -->
+        <section class="layers-section">
+            <h2>OSI Layers, Protocol Data Units, and Protocol Assignments</h2>
+            
+            <div class="layer layer-7">
+                <h3>Layer 7 - Application Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Data</div>
+                <div class="protocols">
+                    <strong>Protocols:</strong>
+                    <ul>
+                        <li>DHCP - Dynamic Host Configuration Protocol</li>
+                        <li>DNS - Domain Name System</li>
+                        <li>FTP - File Transfer Protocol</li>
+                        <li>HTTP - Hypertext Transfer Protocol</li>
+                        <li>MIME - Multipurpose Internet Mail Extensions</li>
+                        <li>NetBIOS - Network Basic Input/Output System</li>
+                        <li>NNTP - Network News Transfer Protocol</li>
+                        <li>SIP - Session Initiation Protocol</li>
+                        <li>Telnet - Teletype Network</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layer layer-6">
+                <h3>Layer 6 - Presentation Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Data</div>
+                <div class="protocols">
+                    <strong>Protocols:</strong>
+                    <ul>
+                        <li>SSL - Secure Sockets Layer</li>
+                        <li>TLS - Transport Layer Security</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layer layer-5">
+                <h3>Layer 5 - Session Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Data</div>
+                <div class="protocols">
+                    <strong>Protocols:</strong>
+                    <ul>
+                        <li>NetBIOS - Network Basic Input/Output System (Session)</li>
+                        <li>RTP - Real-time Transport Protocol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layer layer-4">
+                <h3>Layer 4 - Transport Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Segment (TCP) / Datagram (UDP)</div>
+                <div class="protocols">
+                    <strong>Protocols:</strong>
+                    <ul>
+                        <li>TCP - Transmission Control Protocol</li>
+                        <li>UDP - User Datagram Protocol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layer layer-3">
+                <h3>Layer 3 - Network Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Packet</div>
+                <div class="protocols">
+                    <strong>Protocols:</strong>
+                    <ul>
+                        <li>ICMP - Internet Control Message Protocol</li>
+                        <li>IGMP - Internet Group Management Protocol</li>
+                        <li>IPv4 - Internet Protocol version 4</li>
+                        <li>IPv6 - Internet Protocol version 6</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layer layer-2">
+                <h3>Layer 2 - Data Link Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Frame</div>
+                <div class="protocols">
+                    <strong>Protocols:</strong>
+                    <ul>
+                        <li>ARP - Address Resolution Protocol</li>
+                        <li>IEEE 802.11 - Wireless LAN (Wi-Fi)</li>
+                        <li>L2TP - Layer 2 Tunneling Protocol</li>
+                        <li>SLIP - Serial Line Internet Protocol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layer layer-1">
+                <h3>Layer 1 - Physical Layer</h3>
+                <div class="pdu"><strong>PDU:</strong> Bit</div>
+                <div class="protocols">
+                    <strong>Protocols/Standards:</strong>
+                    <ul>
+                        <li>Bluetooth - Wireless technology standard</li>
+                        <li>IEEE 1394 - FireWire</li>
+                        <li>RS-232 - Serial communication standard</li>
+                        <li>RS-449 - Serial communication standard</li>
+                        <li>USB - Universal Serial Bus</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Network Technologies -->
+        <section class="content-sections">
+            <h2>Network Technologies</h2>
+            
+            <div class="subsection-group">
+                <h3>Physical Layer Technologies</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 1</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>USB (Universal Serial Bus)</h4>
+                            <p>USB is an industry standard for cables, connectors, and protocols for connection, communication, and power supply between computers and peripheral devices. It provides both data transfer and power delivery capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 2</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>Bluetooth</h4>
+                            <p>Bluetooth is a short-range wireless technology standard used for exchanging data between fixed and mobile devices over short distances using UHF radio waves. It's commonly used for wireless peripherals and IoT devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection-group">
+                <h3>Data Link Layer Protocols</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 3</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>IEEE 802.11 (Wi-Fi)</h4>
+                            <p>IEEE 802.11 is a set of protocols that implement wireless local area network (WLAN) communication. It defines the physical and data link layers for wireless networking and is commonly known as Wi-Fi.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 4</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>ARP (Address Resolution Protocol)</h4>
+                            <p>ARP is a protocol used to map IP network addresses to the hardware (MAC) addresses used by a data link protocol. It's essential for local network communication in IPv4 networks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Network Layer Protocols -->
+        <section class="content-sections">
+            <h2>Network Layer Protocols</h2>
+            
+            <div class="subsection-group">
+                <h3>Internet Protocol Suite</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 5</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>IPv4 (Internet Protocol version 4)</h4>
+                            <p>IPv4 is the fourth version of the Internet Protocol and is one of the core protocols of standards-based internetworking methods. It uses 32-bit addresses and is the most widely deployed protocol.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 6</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>IPv6 (Internet Protocol version 6)</h4>
+                            <p>IPv6 is the most recent version of the Internet Protocol, designed to eventually replace IPv4. It uses 128-bit addresses, providing a vastly larger address space and improved features for routing and network autoconfiguration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection-group">
+                <h3>Supporting Network Protocols</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 7</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>ICMP (Internet Control Message Protocol)</h4>
+                            <p>ICMP is used by network devices to send error messages and operational information. It's commonly used for diagnostic purposes, such as the ping command to test connectivity.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 8</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>IGMP (Internet Group Management Protocol)</h4>
+                            <p>IGMP is used by hosts and adjacent routers to establish multicast group memberships. It's an essential protocol for IP multicast communications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Transport Layer Protocols -->
+        <section class="content-sections">
+            <h2>Transport Layer Protocols</h2>
+            
+            <div class="subsection-group">
+                <h3>Connection-Oriented Protocol</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 9</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>TCP (Transmission Control Protocol)</h4>
+                            <p>TCP is a connection-oriented protocol that provides reliable, ordered, and error-checked delivery of data between applications. It's used when reliability is critical, such as in web browsing and file transfers.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 10</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>UDP (User Datagram Protocol)</h4>
+                            <p>UDP is a connectionless protocol that provides a simple, fast method of sending datagrams. It's used when speed is more important than reliability, such as in streaming media and online gaming.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection-group">
+                <h3>Real-time Communication</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 11</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>RTP (Real-time Transport Protocol)</h4>
+                            <p>RTP is designed for delivering audio and video over IP networks. It's used in streaming media systems, video conferencing, and push-to-talk systems.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 12</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>SIP (Session Initiation Protocol)</h4>
+                            <p>SIP is a signaling protocol used for initiating, maintaining, and terminating real-time sessions that include voice, video, and messaging applications. It's widely used in VoIP communications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Application Layer Protocols -->
+        <section class="content-sections">
+            <h2>Application Layer Protocols</h2>
+            
+            <div class="subsection-group">
+                <h3>Web and File Transfer</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 13</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>HTTP (Hypertext Transfer Protocol)</h4>
+                            <p>HTTP is the foundation of data communication for the World Wide Web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 14</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>FTP (File Transfer Protocol)</h4>
+                            <p>FTP is a standard network protocol used for the transfer of files between a client and server on a computer network. It's built on a client-server model architecture using separate control and data connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection-group">
+                <h3>Network Services</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 15</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>DNS (Domain Name System)</h4>
+                            <p>DNS is a hierarchical distributed naming system for computers, services, or other resources connected to the Internet or a private network. It translates domain names to IP addresses.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-placeholder">
+                            <span>Photo 16</span>
+                        </div>
+                        <div class="card-description">
+                            <h4>DHCP (Dynamic Host Configuration Protocol)</h4>
+                            <p>DHCP is a network management protocol used to dynamically assign IP addresses and other network configuration parameters to devices on a network, enabling them to communicate on IP networks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Network Technologies Laboratory - Exercise One</p>
+    </footer>
+</body>
+</html>
