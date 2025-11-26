@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>IP Networking Report</title>
+<style>
+ body { font-family: Arial, sans-serif; margin: 20px; }
+ h1, h2, h3 { color: darkblue; }
+ .placeholder { border: 1px dashed gray; padding: 10px; margin: 5px; text-align: center; }
+ table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+</style>
+</head>
+<body>
+<h1>IP Networking Report</h1>
+
+<h2>Part 1: Theoretical</h2>
+
+<h3>1.1 IP Address</h3>
+<p>An IP address is a number that identifies a device on a network (example: 192.168.1.10).</p>
+
+<h3>1.2 Network Subnets</h3>
+<p>A subnet is a smaller part of a larger network. Subnets help organize and split networks.</p>
+
+<h3>1.3 Network Classes</h3>
+<p>Older IPv4 networks were divided into classes:</p>
+<ul>
+<li>Class A: Large networks (1.0.0.0 – 126.0.0.0)</li>
+<li>Class B: Medium networks (128.0.0.0 – 191.255.0.0)</li>
+<li>Class C: Small networks (192.0.0.0 – 223.255.255.0)</li>
+</ul>
+
+<h3>1.4 Network Mask</h3>
+<p>The subnet mask shows which part of an IP address is the network and which is the host (example: 255.255.255.0).</p>
+
+<h3>1.5 Routing Table</h3>
+<p>A routing table lists possible network paths and tells the device where to send packets.</p>
+
+<h3>1.6 Default Gateway</h3>
+<p>The default gateway is the router that sends traffic out of the local network.</p>
+
+<h3>1.7 Broadcast</h3>
+<p>A broadcast address sends a message to all devices in the subnet.</p>
+
+<h3>1.8 Subnet Address</h3>
+<p>This is the first address in a subnet and identifies the network itself.</p>
+
+<h3>1.9 Private Network Address</h3>
+<p>Private IP ranges are used inside local networks (examples: 10.x.x.x, 172.16-31.x.x, 192.168.x.x).</p>
+
+<h3>1.10 Network Address Translation (NAT)</h3>
+<p>NAT lets multiple devices use one public IP address by translating internal private addresses.</p>
+
+<h2>Part 2: Practical</h2>
+
+<h3>Tracerts</h3>
+<img src="onet.png" width="844" height="401">
+<div class="placeholder">
+    192.168.8.1 - Default Gateway/Home network<br>
+    10.19.0.1 : 192.168.116.42 - ISP internal routing<br>
+    195.182.218.26 - toya.plix.pl Located in Warsaw, Poland<br>
+    13.227.146.123 - server-13-227-146-123.waw51.r.cloudfront.net www.onet.pl Located in Warsaw, Poland
+</div>
+<img src="googlecom.png" width="643" height="480">
+<div class="placeholder">
+    192.168.8.1 - Default Gateway/Home network<br>
+    10.19.0.1 : 192.168.116.42 - ISP internal routing<br>
+    192.178.71.241 : 216.239.62.224 - external routing from Warsaw to California<br>
+    142.250.109.105 - zr-in-f105.1e100.net www.google.com Located back in Warsaw, Poland
+</div>
+<img src="googlepl.png" width="625" height="513">
+<div class="placeholder">
+    192.168.8.1 - Default Gateway/Home network<br>
+    10.19.0.1 : 192.168.116.42 - ISP internal routing<br>
+    192.178.71.241 : 142.251.67.208 - external routing in Warsaw on Google servers<br>
+    142.250.130.94 - zq-in-f94.1e100.net www.google.pl Located in Warsaw, Poland
+</div>
+<img src="lodman.png" width="798" height="384">
+<div class="placeholder">
+    192.168.8.1 - Default Gateway/Home network<br>
+    10.19.0.1 : 192.168.116.42 - ISP internal routing<br>
+    212.133.55.102 - toya servers in Warsaw, Poland<br>
+    171.75.9.134 - colt.net servers in Berlin, Germany... god knows why<br>
+    212.162.10.82 - Frankfurt, Germany, I'm not questioning that<br>
+    212.191.225.15 - back to Poland, Lodman servers Located in Poznan, Poland<br>
+    212.191.2.25 - lodman.pl servers Located in Lodz, Poland
+</div>
+
+
+
+</body>
+</html>
