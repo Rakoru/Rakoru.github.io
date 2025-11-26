@@ -1,2 +1,2 @@
-# NetworkExerOne
-First exercise for network technologies laboratory
+# NetworkExerTwo
+Second exercise for network technologies laboratory
