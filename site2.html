@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ethernet Basics Report</title>
+<style>
+ body { font-family: Arial, sans-serif; margin: 20px; }
+ h1, h2, h3 { color: darkblue; }
+ table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+ .placeholder { border: 1px dashed gray; padding: 10px; margin: 5px; text-align: center; }
+</style>
+</head>
+<body>
+<h1>Ethernet Basics Report</h1>
+
+<h2>Part 1: Theoretical</h2>
+
+<h3>1.1 Ethernet Standards</h3>
+<p>Ethernet has several physical layer standards such as:</p>
+<ul>
+<li>10BASE-T – 10 Mbps</li>
+<li>100BASE-TX – 100 Mbps</li>
+<li>1000BASE-T – 1 Gbps</li>
+<li>10GBASE-T – 10 Gbps</li>
+</ul>
+<p><strong>Ethernet limits:</strong> maximum cable length is usually 100 meters for copper twisted-pair cables.</p>
+<p><strong>Ethernet frame:</strong> Contains destination MAC, source MAC, type field, data, and CRC.</p>
+
+<h3>1.2 MAC Address & Broadcasting</h3>
+<p>A MAC address is a 48-bit hardware address assigned to network devices. Broadcasting sends a frame to all devices in the LAN using the address FF:FF:FF:FF:FF:FF.</p>
+
+<h3>1.3 Hub vs Switch vs Router</h3>
+<ul>
+<li><strong>Hub:</strong> Sends data to all ports (no intelligence).</li>
+<li><strong>Switch:</strong> Sends data only to the correct device using MAC addresses.</li>
+<li><strong>Router:</strong> Connects networks and uses IP addresses.</li>
+</ul>
+
+<h3>1.4 CSMA/CD, Collision, Duplex</h3>
+<p><strong>CSMA/CD:</strong> A method used in older Ethernet to avoid collisions.</p>
+<p><strong>Collision:</strong> When two devices send data at the same time.</p>
+<p><strong>Half duplex:</strong> Devices can send OR receive (not both).</p>
+<p><strong>Full duplex:</strong> Devices can send AND receive at the same time.</p>
+
+<h3>1.5 ARP & Duplicate IP Detection</h3>
+<p><strong>ARP request:</strong> A broadcast asking “Who has this IP?”</p>
+<p><strong>Duplicate IP detection:</strong> A device sends ARP probes to check if another device uses the same IP.</p>
+
+<h3>1.6 BOOTP & DHCP</h3>
+<p><strong>BOOTP:</strong> Older protocol used to assign IP addresses.</p>
+<p><strong>DHCP:</strong> Newer protocol that automatically gives IPs, DNS, and gateway settings.</p>
+
+<h3>1.7 VLANs</h3>
+<p>VLANs split networks into logical groups, even if devices are not physically separated.</p>
+
+<h2>Part 2: Practical</h2>
+
+<h3>Title 1</h3>
+ <img src="MACadapter.png" width="912" height="164">
+<div class="placeholder">MAC address as Physical Address, Adapter producer: Realtek</div>
+<img src="Deafult.png" width="949" height="99">
+<div class="placeholder">MAC address of default gateway: b4:fb:e4:19:72:aa</div>
+<img src="Arp.png" width="550" height="418">
+<div class="placeholder">Arp flushed with "netsh interface ip delete arpcache" and checked with arp -a</div>
+<img src="DHCP.png" width="1099" height="239">
+<div class="placeholder">DHCP request and ACK captured with Wireshark</div>
+<img src="release.png" width="894" height="387">
+<div class="placeholder">ipconfig /release command output</div>
+<img src="renew.png" width="911" height="450">
+<div class="placeholder">ipconfig /renew command output</div>
+
+<div class="placeholder">!!2.4.   Set the same IP address on two different hosts in the lab and detect it using arp request.!!</div>
+<div class="placeholder">!!2.7.   Change MAC address of a computer in the lab to the same as the MAC address of the other computer in the lab and verify IP address obtained.!!</div>
+
+</body>
+</html>
