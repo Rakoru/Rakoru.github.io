@@ -69,8 +69,29 @@
 <img src="renew.png" width="911" height="450">
 <div class="placeholder">ipconfig /renew command output</div>
 
-<div class="placeholder">!!2.4.   Set the same IP address on two different hosts in the lab and detect it using arp request.!!</div>
-<div class="placeholder">!!2.7.   Change MAC address of a computer in the lab to the same as the MAC address of the other computer in the lab and verify IP address obtained.!!</div>
+<img src="2.4.1.png">
+<img src="2.4.2.png">
+<div class="placeholder">Only one host appears after checking with arp -a in cmd, but wireshark shows two hosts with the same IP</div>
+<img src="2.7.png">
+<div class="placeholder">Both have the same mac addresses and receive the same IP</div>
+
+
+<img src="2.1.1.png">
+<div class="placeholder">MAC address as Physical Address</div>
+<img src="2.1.2.png">
+<div class="placeholder">MAC address of Default gateway: 48:a9:8a:b0:a8:a5</div>
+<img src="2.2.png">
+<div class="placeholder">Producer - Intel</div>
+<img src="2.3.png">
+<div class="placeholder">Arp flushed with "netsh interface ip delete arpcache" and checked with arp -a before and after - clear difference</div>
+<img src="2.5.png">
+<div class="placeholder">DHCP request and ACK captured with Wireshark</div>
+<img src="2.6.1.png">
+<div class="placeholder">ipconfig /release command output</div>
+<img src="2.6.2.png">
+<div class="placeholder">ipconfig /renew command output</div>
+ 
 
 </body>
 </html>
+
