@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TCP and UDP Report</title>
+<style>
+ body { font-family: Arial, sans-serif; margin: 20px; }
+ h1, h2, h3 { color: darkblue; }
+ .placeholder { border: 1px dashed gray; padding: 10px; margin: 5px; text-align: center; }
+ table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+</style>
+</head>
+<body>
+<h1>TCP and UDP Report</h1>
+
+<h2>Part 1: Theoretical</h2>
+
+<h3>1.1 TCP Protocol</h3>
+<p>TCP (Transmission Control Protocol) is a reliable protocol. It makes sure data arrives in the correct order and without errors.</p>
+
+<h3>1.2 UDP Protocol</h3>
+<p>UDP (User Datagram Protocol) is a fast but unreliable protocol. It sends data without checking delivery.</p>
+
+<h3>1.3 TCP Protocol Parameters</h3>
+<p>Important TCP parameters include source port, destination port, sequence number, acknowledgment number, and flags.</p>
+
+<h3>1.4 UDP Protocol Parameters</h3>
+<p>UDP parameters are source port, destination port, length, and checksum.</p>
+
+<h3>1.5 TCP Connection</h3>
+<p>A TCP connection is a stable communication link between two devices.</p>
+
+<h3>1.6 Three-Way Handshake</h3>
+<p>The three-way handshake is used to start a TCP connection: SYN, SYN-ACK, and ACK.</p>
+
+<h3>1.7 Connection Establishment and Release</h3>
+<p>Connection establishment starts communication. Connection release safely closes the TCP connection.</p>
+
+<h3>1.8 Ports</h3>
+<p>Ports are numbers that identify applications on a device (example: HTTP uses port 80).</p>
+
+<h2>Part 2: Practical (Images and Descriptions)</h2>
+
+<img src="gglaf.png" width="707" height="600">
+<img src="gglbf.png" width="709" height="322">
+<img src="gglws.png" width="1544" height="579">
+<div class="placeholder">2.1.1:
+    Remote ports : 53-for DNS, 443-TCP/TLS || 
+    Local : random free ports, for example 57449,65369,64843
+</div>
+<img src="ftpss.png" width="723" height="528">
+<div class="placeholder">2.1.2:
+Remote ports : 21-FTP 1194-OpenVPN port || 
+Local : random free ports, 55108,54878</div>
+<img src="scpss.png" width="703" height="541">
+<div class="placeholder">2.1.3:
+Remote port : 22-SCP(SSH) 1194-OpenVPN port || 
+Local port : 54546,54878</div>
+<img src="gglws.png" width="1544" height="579">
+<div class="placeholder">2.1.4:
+Remote port : 53-DNS || 
+Local port: 54526</div>
+
+
+<div class="placeholder">Image 5 + description</div>
+<div class="placeholder">Image 6 + description</div>
+<div class="placeholder">Image 7 + description</div>
+<div class="placeholder">Image 8 + description</div>
+
+</body>
+</html>
